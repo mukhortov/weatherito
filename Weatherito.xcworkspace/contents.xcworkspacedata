@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WeatheritoKit/WeatheritoKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/quick/Quick.xcodeproj">
    </FileRef>
    <FileRef

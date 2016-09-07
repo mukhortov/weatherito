@@ -6,9 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		233C9DF91D80C9DD00198A26 /* WeatheritoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233C9DF81D80C9DD00198A26 /* WeatheritoKitTests.swift */; };
+		233C9DFB1D80C9DD00198A26 /* WeatheritoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233C9DE41D80C90500198A26 /* WeatheritoKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		233C9DFC1D80C9DD00198A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233C9DDB1D80C90500198A26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233C9DE31D80C90500198A26;
+			remoteInfo = WeatheritoKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		233C9DE41D80C90500198A26 /* WeatheritoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatheritoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		233C9DE81D80C90500198A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233C9DF01D80C9C200198A26 /* framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
+		233C9DF11D80C9C200198A26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		233C9DF61D80C9DD00198A26 /* WeatheritoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatheritoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		233C9DF81D80C9DD00198A26 /* WeatheritoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheritoKitTests.swift; sourceTree = "<group>"; };
+		233C9DFA1D80C9DD00198A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -19,13 +39,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		233C9DF31D80C9DD00198A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233C9DFB1D80C9DD00198A26 /* WeatheritoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		233C9DDA1D80C90500198A26 = {
 			isa = PBXGroup;
 			children = (
+				233C9DEF1D80C9C200198A26 /* Configs */,
 				233C9DE61D80C90500198A26 /* WeatheritoKit */,
+				233C9DF71D80C9DD00198A26 /* WeatheritoKitTests */,
 				233C9DE51D80C90500198A26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -34,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				233C9DE41D80C90500198A26 /* WeatheritoKit.framework */,
+				233C9DF61D80C9DD00198A26 /* WeatheritoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -44,6 +75,25 @@
 				233C9DE81D80C90500198A26 /* Info.plist */,
 			);
 			path = WeatheritoKit;
+			sourceTree = "<group>";
+		};
+		233C9DEF1D80C9C200198A26 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				233C9DF01D80C9C200198A26 /* framework.xcconfig */,
+				233C9DF11D80C9C200198A26 /* README.md */,
+			);
+			name = Configs;
+			path = ../Configs;
+			sourceTree = "<group>";
+		};
+		233C9DF71D80C9DD00198A26 /* WeatheritoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				233C9DF81D80C9DD00198A26 /* WeatheritoKitTests.swift */,
+				233C9DFA1D80C9DD00198A26 /* Info.plist */,
+			);
+			path = WeatheritoKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,16 +127,39 @@
 			productReference = 233C9DE41D80C90500198A26 /* WeatheritoKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		233C9DF51D80C9DD00198A26 /* WeatheritoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 233C9DFE1D80C9DD00198A26 /* Build configuration list for PBXNativeTarget "WeatheritoKitTests" */;
+			buildPhases = (
+				233C9DF21D80C9DD00198A26 /* Sources */,
+				233C9DF31D80C9DD00198A26 /* Frameworks */,
+				233C9DF41D80C9DD00198A26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				233C9DFD1D80C9DD00198A26 /* PBXTargetDependency */,
+			);
+			name = WeatheritoKitTests;
+			productName = WeatheritoKitTests;
+			productReference = 233C9DF61D80C9DD00198A26 /* WeatheritoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		233C9DDB1D80C90500198A26 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = com.soundcloud;
 				TargetAttributes = {
 					233C9DE31D80C90500198A26 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					233C9DF51D80C9DD00198A26 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -105,12 +178,20 @@
 			projectRoot = "";
 			targets = (
 				233C9DE31D80C90500198A26 /* WeatheritoKit */,
+				233C9DF51D80C9DD00198A26 /* WeatheritoKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		233C9DE21D80C90500198A26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233C9DF41D80C9DD00198A26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,11 +208,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		233C9DF21D80C9DD00198A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233C9DF91D80C9DD00198A26 /* WeatheritoKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		233C9DFD1D80C9DD00198A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 233C9DE31D80C90500198A26 /* WeatheritoKit */;
+			targetProxy = 233C9DFC1D80C9DD00198A26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		233C9DEA1D80C90500198A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233C9DF01D80C9C200198A26 /* framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -231,6 +329,7 @@
 		};
 		233C9DED1D80C90500198A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233C9DF01D80C9C200198A26 /* framework.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -249,6 +348,7 @@
 		};
 		233C9DEE1D80C90500198A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233C9DF01D80C9C200198A26 /* framework.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -261,6 +361,28 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		233C9DFF1D80C9DD00198A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeatheritoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		233C9E001D80C9DD00198A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeatheritoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -282,6 +404,14 @@
 			buildConfigurations = (
 				233C9DED1D80C90500198A26 /* Debug */,
 				233C9DEE1D80C90500198A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		233C9DFE1D80C9DD00198A26 /* Build configuration list for PBXNativeTarget "WeatheritoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233C9DFF1D80C9DD00198A26 /* Debug */,
+				233C9E001D80C9DD00198A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

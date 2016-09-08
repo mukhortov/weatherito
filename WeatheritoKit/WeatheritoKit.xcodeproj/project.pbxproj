@@ -15,6 +15,10 @@
 		23D170171D82011000CEA08A /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 23D1700F1D81FCE300CEA08A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23D1701A1D82012C00CEA08A /* ForecastKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170181D82012C00CEA08A /* ForecastKit.framework */; };
 		23D1701B1D82012C00CEA08A /* LocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170191D82012C00CEA08A /* LocationKit.framework */; };
+		23D1701D1D8207CC00CEA08A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D1701C1D8207CC00CEA08A /* WeatherService.swift */; };
+		23D1701F1D8213AC00CEA08A /* ForecastEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D1701E1D8213AC00CEA08A /* ForecastEntity.swift */; };
+		23D170211D82165400CEA08A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D170201D82165400CEA08A /* Constants.swift */; };
+		23D170231D8216C300CEA08A /* WeatherObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D170221D8216C300CEA08A /* WeatherObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		23D170111D81FCE700CEA08A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D170181D82012C00CEA08A /* ForecastKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ForecastKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D170191D82012C00CEA08A /* LocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D1701C1D8207CC00CEA08A /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		23D1701E1D8213AC00CEA08A /* ForecastEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastEntity.swift; sourceTree = "<group>"; };
+		23D170201D82165400CEA08A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23D170221D8216C300CEA08A /* WeatherObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,6 @@
 			children = (
 				233C9DEF1D80C9C200198A26 /* Configs */,
 				233C9DE61D80C90500198A26 /* WeatheritoKit */,
-				233C9DF71D80C9DD00198A26 /* WeatheritoKitTests */,
 				233C9DE51D80C90500198A26 /* Products */,
 				23D1700E1D81FCE300CEA08A /* Frameworks */,
 			);
@@ -103,6 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				233C9DE81D80C90500198A26 /* Info.plist */,
+				23D1701C1D8207CC00CEA08A /* WeatherService.swift */,
+				23D1701E1D8213AC00CEA08A /* ForecastEntity.swift */,
+				23D170201D82165400CEA08A /* Constants.swift */,
+				23D170221D8216C300CEA08A /* WeatherObservable.swift */,
+				233C9DF71D80C9DD00198A26 /* WeatheritoKitTests */,
 			);
 			path = WeatheritoKit;
 			sourceTree = "<group>";
@@ -124,7 +136,7 @@
 				233C9DFA1D80C9DD00198A26 /* Info.plist */,
 			);
 			path = WeatheritoKitTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		23D1700E1D81FCE300CEA08A /* Frameworks */ = {
 			isa = PBXGroup;
@@ -199,6 +211,7 @@
 				TargetAttributes = {
 					233C9DE31D80C90500198A26 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					233C9DF51D80C9DD00198A26 = {
@@ -247,6 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D1701D1D8207CC00CEA08A /* WeatherService.swift in Sources */,
+				23D1701F1D8213AC00CEA08A /* ForecastEntity.swift in Sources */,
+				23D170211D82165400CEA08A /* Constants.swift in Sources */,
+				23D170231D8216C300CEA08A /* WeatherObservable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 233C9DF01D80C9C200198A26 /* framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -381,10 +399,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeatheritoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -393,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 233C9DF01D80C9C200198A26 /* framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -400,6 +421,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeatheritoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +433,7 @@
 		233C9DFF1D80C9DD00198A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WeatheritoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKitTests;
@@ -422,6 +445,7 @@
 		233C9E001D80C9DD00198A26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WeatheritoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.WeatheritoKitTests;

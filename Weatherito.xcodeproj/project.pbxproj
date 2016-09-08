@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233C9E041D80CB5A00198A26 /* ForecastKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233C9E021D80CB5A00198A26 /* ForecastKit.framework */; };
 		23C162011D80386B00DE3CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C162001D80386B00DE3CCC /* AppDelegate.swift */; };
 		23C162031D80386B00DE3CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C162021D80386B00DE3CCC /* ViewController.swift */; };
 		23C162061D80386B00DE3CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C162041D80386B00DE3CCC /* Main.storyboard */; };
 		23C162081D80386B00DE3CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C162071D80386B00DE3CCC /* Assets.xcassets */; };
 		23C1620B1D80386B00DE3CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C162091D80386B00DE3CCC /* LaunchScreen.storyboard */; };
 		23C162161D80386B00DE3CCC /* WeatheritoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C162151D80386B00DE3CCC /* WeatheritoTests.swift */; };
+		23D170031D81FB1C00CEA08A /* ForecastKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 233C9E021D80CB5A00198A26 /* ForecastKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23D170051D81FB2000CEA08A /* LocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233C9E031D80CB5A00198A26 /* LocationKit.framework */; };
+		23D170061D81FB2000CEA08A /* LocationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 233C9E031D80CB5A00198A26 /* LocationKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23D170081D81FB9400CEA08A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170071D81FB9400CEA08A /* Quick.framework */; };
+		23D1700A1D81FB9800CEA08A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170091D81FB9800CEA08A /* Nimble.framework */; };
+		23D1700C1D81FCD200CEA08A /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170091D81FB9800CEA08A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23D1700D1D81FCD200CEA08A /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170071D81FB9400CEA08A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +33,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23D170041D81FB1C00CEA08A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23D170061D81FB2000CEA08A /* LocationKit.framework in Embed Frameworks */,
+				23D170031D81FB1C00CEA08A /* ForecastKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D1700B1D81FBFC00CEA08A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23D1700C1D81FCD200CEA08A /* Nimble.framework in Copy Frameworks */,
+				23D1700D1D81FCD200CEA08A /* Quick.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		233C9E021D80CB5A00198A26 /* ForecastKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ForecastKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233C9E031D80CB5A00198A26 /* LocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C161FD1D80386B00DE3CCC /* Weatherito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C162001D80386B00DE3CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C162021D80386B00DE3CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +73,8 @@
 		23C162111D80386B00DE3CCC /* WeatheritoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatheritoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C162151D80386B00DE3CCC /* WeatheritoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheritoTests.swift; sourceTree = "<group>"; };
 		23C162171D80386B00DE3CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D170071D81FB9400CEA08A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D170091D81FB9800CEA08A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233C9E041D80CB5A00198A26 /* ForecastKit.framework in Frameworks */,
+				23D170051D81FB2000CEA08A /* LocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +91,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D1700A1D81FB9800CEA08A /* Nimble.framework in Frameworks */,
+				23D170081D81FB9400CEA08A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233C9E011D80CB5A00198A26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D170091D81FB9800CEA08A /* Nimble.framework */,
+				23D170071D81FB9400CEA08A /* Quick.framework */,
+				233C9E021D80CB5A00198A26 /* ForecastKit.framework */,
+				233C9E031D80CB5A00198A26 /* LocationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23C161F41D80386B00DE3CCC = {
 			isa = PBXGroup;
 			children = (
 				23C161FF1D80386B00DE3CCC /* Weatherito */,
 				23C162141D80386B00DE3CCC /* WeatheritoTests */,
 				23C161FE1D80386B00DE3CCC /* Products */,
+				233C9E011D80CB5A00198A26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +161,7 @@
 				23C161F91D80386B00DE3CCC /* Sources */,
 				23C161FA1D80386B00DE3CCC /* Frameworks */,
 				23C161FB1D80386B00DE3CCC /* Resources */,
+				23D170041D81FB1C00CEA08A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +179,7 @@
 				23C1620D1D80386B00DE3CCC /* Sources */,
 				23C1620E1D80386B00DE3CCC /* Frameworks */,
 				23C1620F1D80386B00DE3CCC /* Resources */,
+				23D1700B1D81FBFC00CEA08A /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,6 +461,7 @@
 				23C1621C1D80386B00DE3CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23C1621D1D80386B00DE3CCC /* Build configuration list for PBXNativeTarget "WeatheritoTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +470,7 @@
 				23C1621F1D80386B00DE3CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

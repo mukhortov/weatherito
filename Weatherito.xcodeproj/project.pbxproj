@@ -12,7 +12,6 @@
 		2374A3EF1D87FE6B0098B1FF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374A3EE1D87FE6B0098B1FF /* TodayViewController.swift */; };
 		2374A3F21D87FE6B0098B1FF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2374A3F01D87FE6B0098B1FF /* MainInterface.storyboard */; };
 		2374A3F71D87FE6B0098B1FF /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2374A3EA1D87FE6B0098B1FF /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2374A3FC1D87FE780098B1FF /* WeatheritoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2374A3FB1D87FE780098B1FF /* WeatheritoKit.framework */; };
 		23C162011D80386B00DE3CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C162001D80386B00DE3CCC /* AppDelegate.swift */; };
 		23C162031D80386B00DE3CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C162021D80386B00DE3CCC /* ViewController.swift */; };
 		23C162061D80386B00DE3CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C162041D80386B00DE3CCC /* Main.storyboard */; };
@@ -26,6 +25,18 @@
 		23D1700A1D81FB9800CEA08A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170091D81FB9800CEA08A /* Nimble.framework */; };
 		23D1700C1D81FCD200CEA08A /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170091D81FB9800CEA08A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23D1700D1D81FCD200CEA08A /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 23D170071D81FB9400CEA08A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F6726D1D8819ED00ECA105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6726C1D8819ED00ECA105 /* AppDelegate.swift */; };
+		23F6726F1D8819ED00ECA105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6726E1D8819ED00ECA105 /* ViewController.swift */; };
+		23F672721D8819ED00ECA105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F672701D8819ED00ECA105 /* Main.storyboard */; };
+		23F672741D8819ED00ECA105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F672731D8819ED00ECA105 /* Assets.xcassets */; };
+		23F6727F1D881A5F00ECA105 /* WeatheritoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F6727E1D881A5F00ECA105 /* WeatheritoKit.framework */; };
+		23F672801D881A5F00ECA105 /* WeatheritoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F6727E1D881A5F00ECA105 /* WeatheritoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F672821D881A9D00ECA105 /* WeatheritoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672811D881A9D00ECA105 /* WeatheritoKit.framework */; };
+		23F672831D881A9D00ECA105 /* WeatheritoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672811D881A9D00ECA105 /* WeatheritoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F672851D881AC500ECA105 /* ForecastKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672841D881AC500ECA105 /* ForecastKit.framework */; };
+		23F672861D881AC500ECA105 /* ForecastKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672841D881AC500ECA105 /* ForecastKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F672891D881AE400ECA105 /* LocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672881D881AE400ECA105 /* LocationKit.framework */; };
+		23F6728A1D881AE400ECA105 /* LocationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F672881D881AE400ECA105 /* LocationKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +76,7 @@
 			files = (
 				23D170061D81FB2000CEA08A /* LocationKit.framework in Embed Frameworks */,
 				23D170031D81FB1C00CEA08A /* ForecastKit.framework in Embed Frameworks */,
+				23F672801D881A5F00ECA105 /* WeatheritoKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +93,19 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23F6727B1D881A1900ECA105 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23F6728A1D881AE400ECA105 /* LocationKit.framework in Embed Frameworks */,
+				23F672861D881AC500ECA105 /* ForecastKit.framework in Embed Frameworks */,
+				23F672831D881A9D00ECA105 /* WeatheritoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +116,6 @@
 		2374A3EE1D87FE6B0098B1FF /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2374A3F11D87FE6B0098B1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2374A3F31D87FE6B0098B1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2374A3FB1D87FE780098B1FF /* WeatheritoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WeatheritoKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Weatherito-bhktsvnjrkrdtegwtcqjoqkpsjif/Build/Products/Debug-iphonesimulator/WeatheritoKit.framework"; sourceTree = "<group>"; };
 		23C161FD1D80386B00DE3CCC /* Weatherito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C162001D80386B00DE3CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C162021D80386B00DE3CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +128,16 @@
 		23C162171D80386B00DE3CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23D170071D81FB9400CEA08A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D170091D81FB9800CEA08A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F6726A1D8819ED00ECA105 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F6726C1D8819ED00ECA105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23F6726E1D8819ED00ECA105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23F672711D8819ED00ECA105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F672731D8819ED00ECA105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F672751D8819ED00ECA105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F6727E1D881A5F00ECA105 /* WeatheritoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatheritoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F672811D881A9D00ECA105 /* WeatheritoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatheritoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F672841D881AC500ECA105 /* ForecastKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ForecastKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F672881D881AE400ECA105 /* LocationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2374A3FC1D87FE780098B1FF /* WeatheritoKit.framework in Frameworks */,
 				2374A3EC1D87FE6B0098B1FF /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +155,7 @@
 			files = (
 				233C9E041D80CB5A00198A26 /* ForecastKit.framework in Frameworks */,
 				23D170051D81FB2000CEA08A /* LocationKit.framework in Frameworks */,
+				23F6727F1D881A5F00ECA105 /* WeatheritoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,18 +168,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23F672671D8819ED00ECA105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F672891D881AE400ECA105 /* LocationKit.framework in Frameworks */,
+				23F672851D881AC500ECA105 /* ForecastKit.framework in Frameworks */,
+				23F672821D881A9D00ECA105 /* WeatheritoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		233C9E011D80CB5A00198A26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2374A3FB1D87FE780098B1FF /* WeatheritoKit.framework */,
-				23D170091D81FB9800CEA08A /* Nimble.framework */,
-				23D170071D81FB9400CEA08A /* Quick.framework */,
-				233C9E021D80CB5A00198A26 /* ForecastKit.framework */,
-				233C9E031D80CB5A00198A26 /* LocationKit.framework */,
-				2374A3EB1D87FE6B0098B1FF /* NotificationCenter.framework */,
+				23F672871D881AD400ECA105 /* tvOS */,
+				23F6727D1D881A2B00ECA105 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +206,7 @@
 				23C161FF1D80386B00DE3CCC /* Weatherito */,
 				23C162141D80386B00DE3CCC /* WeatheritoTests */,
 				2374A3ED1D87FE6B0098B1FF /* Today */,
+				23F6726B1D8819ED00ECA105 /* TV */,
 				23C161FE1D80386B00DE3CCC /* Products */,
 				233C9E011D80CB5A00198A26 /* Frameworks */,
 			);
@@ -177,6 +218,7 @@
 				23C161FD1D80386B00DE3CCC /* Weatherito.app */,
 				23C162111D80386B00DE3CCC /* WeatheritoTests.xctest */,
 				2374A3EA1D87FE6B0098B1FF /* Today.appex */,
+				23F6726A1D8819ED00ECA105 /* TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +243,41 @@
 				23C162171D80386B00DE3CCC /* Info.plist */,
 			);
 			path = WeatheritoTests;
+			sourceTree = "<group>";
+		};
+		23F6726B1D8819ED00ECA105 /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				23F6726C1D8819ED00ECA105 /* AppDelegate.swift */,
+				23F6726E1D8819ED00ECA105 /* ViewController.swift */,
+				23F672701D8819ED00ECA105 /* Main.storyboard */,
+				23F672731D8819ED00ECA105 /* Assets.xcassets */,
+				23F672751D8819ED00ECA105 /* Info.plist */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		23F6727D1D881A2B00ECA105 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				233C9E021D80CB5A00198A26 /* ForecastKit.framework */,
+				233C9E031D80CB5A00198A26 /* LocationKit.framework */,
+				23F6727E1D881A5F00ECA105 /* WeatheritoKit.framework */,
+				23D170091D81FB9800CEA08A /* Nimble.framework */,
+				23D170071D81FB9400CEA08A /* Quick.framework */,
+				2374A3EB1D87FE6B0098B1FF /* NotificationCenter.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		23F672871D881AD400ECA105 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				23F672881D881AE400ECA105 /* LocationKit.framework */,
+				23F672841D881AC500ECA105 /* ForecastKit.framework */,
+				23F672811D881A9D00ECA105 /* WeatheritoKit.framework */,
+			);
+			name = tvOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +339,24 @@
 			productReference = 23C162111D80386B00DE3CCC /* WeatheritoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		23F672691D8819ED00ECA105 /* TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F672781D8819ED00ECA105 /* Build configuration list for PBXNativeTarget "TV" */;
+			buildPhases = (
+				23F672661D8819ED00ECA105 /* Sources */,
+				23F672671D8819ED00ECA105 /* Frameworks */,
+				23F672681D8819ED00ECA105 /* Resources */,
+				23F6727B1D881A1900ECA105 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TV;
+			productName = TV;
+			productReference = 23F6726A1D8819ED00ECA105 /* TV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,6 +380,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 23C161FC1D80386B00DE3CCC;
 					};
+					23F672691D8819ED00ECA105 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 23C161F81D80386B00DE3CCC /* Build configuration list for PBXProject "Weatherito" */;
@@ -303,6 +402,7 @@
 				23C161FC1D80386B00DE3CCC /* Weatherito */,
 				23C162101D80386B00DE3CCC /* WeatheritoTests */,
 				2374A3E91D87FE6B0098B1FF /* Today */,
+				23F672691D8819ED00ECA105 /* TV */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +433,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23F672681D8819ED00ECA105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F672741D8819ED00ECA105 /* Assets.xcassets in Resources */,
+				23F672721D8819ED00ECA105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,6 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C162161D80386B00DE3CCC /* WeatheritoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F672661D8819ED00ECA105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6726F1D8819ED00ECA105 /* ViewController.swift in Sources */,
+				23F6726D1D8819ED00ECA105 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +517,14 @@
 				23C1620A1D80386B00DE3CCC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		23F672701D8819ED00ECA105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F672711D8819ED00ECA105 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -573,6 +699,38 @@
 			};
 			name = Release;
 		};
+		23F672761D8819ED00ECA105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.TV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		23F672771D8819ED00ECA105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundcloud.TV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +741,7 @@
 				2374A3F91D87FE6B0098B1FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23C161F81D80386B00DE3CCC /* Build configuration list for PBXProject "Weatherito" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +769,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		23F672781D8819ED00ECA105 /* Build configuration list for PBXNativeTarget "TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F672761D8819ED00ECA105 /* Debug */,
+				23F672771D8819ED00ECA105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

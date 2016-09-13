@@ -23,11 +23,19 @@ public class WeatherObservable: NSObject {
                                       of object: Any?,
                                       change: [NSKeyValueChangeKey : Any]?,
                                       context: UnsafeMutableRawPointer?) {
-        guard let data = self.userDefaults.value(forKey: Keys.Forecast.rawValue) as? Data,
-            let forecast = ForecastEntity(data: data) else { return }
-        self.observer(forecast)
+        self.notifyObserverIfData()
     }
     
+    private func notifyObserverIfData() {
+        guard let data = self.userDefaults.value(forKey: Keys.Forecast.rawValue) as? Data,
+            let forecast = ForecastEntity(data: data) else { return }
+        DispatchQueue.main.async { [weak self] in 
+            self?.observer(forecast)
+        }
+    }
+    
+    // MARK: - Private
+
     deinit {
         self.userDefaults.removeObserver(self, forKeyPath: Keys.Forecast.rawValue)
     }

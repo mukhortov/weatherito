@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "23C161FC1D80386B00DE3CCC"
-            BuildableName = "Weatherito.app"
-            BlueprintName = "Weatherito"
-            ReferencedContainer = "container:Weatherito.xcodeproj">
+            BlueprintIdentifier = "233C9DE31D80C90500198A26"
+            BuildableName = "WeatheritoKit.framework"
+            BlueprintName = "WeatheritoKit"
+            ReferencedContainer = "container:WeatheritoKit/WeatheritoKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -70,16 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "23C161FC1D80386B00DE3CCC"
-            BuildableName = "Weatherito.app"
-            BlueprintName = "Weatherito"
-            ReferencedContainer = "container:Weatherito.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

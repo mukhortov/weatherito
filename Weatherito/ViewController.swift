@@ -1,25 +1,36 @@
-//
-//  ViewController.swift
-//  Weatherito
-//
-//  Created by Pedro Pinera Buendia on 07/09/16.
-//  Copyright © 2016 com.soundcloud. All rights reserved.
-//
-
 import UIKit
+import WeatheritoKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Attributes
+    
+    var service: WeatherService!
+    var observable: WeatherObservable!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.service = WeatherService(appKey: "b556da9252961da55f49c101b1af2d8a")
+        self.observable = WeatherObservable(observer: { [weak self] forecast in
+            self?.forecastUpdated(forecast)
+            
+            })
+        self.service.sync { error in
+            if let error = error {
+                print("Error synchronizing weather: \(error)")
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Private
+    
+    func forecastUpdated(_ forecast: ForecastEntity) {
+        let celsius = (forecast.temperature - 32) * 5/9
+        self.temperatureLabel.text = "\(celsius) °C"
+        self.summaryLabel.text = forecast.summary
     }
-
-
 }
 
